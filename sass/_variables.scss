@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "SVN-GilroyLight";
+    src: url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.eot");
+    src: url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.svg#SVN-GilroyLight")format("svg");
+}
+
+
+
+$primary-color: rgba(0, 52, 89, 0.765);
+$secondary-color: rgba(252, 238, 213, 1);
+$terciary-color: rgba(153, 162, 165, 1);
+$padding-large: 20px;
+$padding-small: 10px;
+
+
+// variables.scss
+
+// Couleurs
+$primary-color: rgba(0, 42, 72, 1);
+$secondary-color: rgba(252, 238, 213, 1);
+
+// Typographie
+$font-family: "SVN-GilroyLight";
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 20px;
+$font-size-title: 24px;
+$line-height-base: 1.5;
+$line-height-title: 1.2;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-light: 300;
+
+// Espacements et Marges
+$padding-small: 10px;
+$padding-medium: 15px;
+$padding-large: 20px;
+$margin-small: 8px;
+$margin-medium: 16px;
+$margin-large: 24px;
+
+// Effets et Ombres
+$box-shadow-small: 0px 1px 3px rgba(0, 0, 0, 0.1);
+$box-shadow-medium: 0px 3px 6px rgba(0, 0, 0, 0.15);
+$box-shadow-large: 0px 5px 15px rgba(0, 0, 0, 0.2);
+$transition-fast: 0.2s ease-in-out;
+$transition-medium: 0.4s ease-in-out;
+$transition-slow: 0.6s ease-in-out;
+
+// Dimensions pour les Conteneurs et Boutons
+$container-max-width: 1200px;
+$container-padding: 20px;
+$button-height-small: 30px;
+$button-height-large: 50px;
+$button-width-small: 80px;
+$button-width-large: 150px;
+$button-radius: 5px;
+
+// Layout
+$grid-gap-small: 8px;
+$grid-gap-medium: 16px;
+$grid-gap-large: 24px;
+$header-height: 60px;
+$footer-height: 80px;
+$sidebar-width: 250px;

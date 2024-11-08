@@ -1,0 +1,11 @@
+@import 'variables';
+
+@mixin button-style {
+    padding: 15px 60px;
+    border: none;
+    text-align: center;
+    font-size: medium;
+    color: white;
+    border-radius: 50px;
+    background-color: $primary-color;
+}
