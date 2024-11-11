@@ -1,0 +1,95 @@
+.footer {
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+
+    &__nav {
+        display: flex;
+        color: $primary-color;
+        justify-content: space-between;
+        ul{
+            display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin-top: 40px;
+        gap: 50px;
+        }
+        
+    }
+
+    &__contact {
+        color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+
+        i{
+            font-size: 30px;
+        }
+    }
+
+
+    &__subscribe {
+        padding: 30px;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        display: flex;
+        gap: 20px;
+        background-color: $primary-color;
+        h1{
+            color: white;
+        }
+    }
+    &__email {
+        display: flex;
+        padding: 20px;
+        background-color: white;
+        gap: 20px;
+        max-height: 90px;
+        border-radius: 15px;
+    }
+    
+    &__credit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgb(179, 179, 179);
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding-top: 20px
+    }     
+
+
+    &__btn {
+        @include button-style;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-radius: 10px;
+    }
+    input {
+        padding: 8px 40px 10px 50px;
+        width: 300px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        border: 1px solid gray;
+    }
+   
+}

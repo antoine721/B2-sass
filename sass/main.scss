@@ -1,5 +1,3 @@
-// main.scss
-// main.scss
 @import 'variables';
 @import 'mixins';
 @import 'base';
@@ -23,57 +21,6 @@ body {
     width: 100%;
 }
 
-
-.header {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    width: 100vw;
-    background-color: $secondary-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-    &__nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        list-style: none;
-        gap: 50px;
-    }
-    &__li{
-        font-size: $font-size-large;
-        font-weight: $font-weight-bold;
-        color: $primary-color;
-    }
-    img {
-        width: 150px;
-    }
-
-    &__search {
-        display: flex;
-        gap: 20px;
-        input {
-            padding: 8px 40px 10px 50px;
-            width: 300px;
-            height: 50px;
-            border: none;
-            border-radius: 50px;
-        }
-        i {
-            position: absolute;
-            left: 61vw;
-            top: 50px;
-            pointer-events: none; /* L'icône ne bloque pas l'interaction avec l'input */
-        }
-    }
-    button {
-        @include button-style;
-    }
-}
-
 .section1 {
     background-color: $secondary-color;
     display: flex;
@@ -84,11 +31,273 @@ body {
         flex-direction: column;
         margin-top: 10vh;
         width: 40vw;
+        max-width: 600px;
+        min-width: 200px;
+        gap: 30px;
     }
+    &__title{
+        font-size: $font-size-title;
+        font-weight: $font-weight-bold;
+        color: $primary-color;
+    }
+    &__subtitle {
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+    }
+
+    &__text {
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+    }
+
+    &__btn {
+        display: flex;
+        height: 60px;
+        gap: 30px;
+    }
+
+    &__view {
+        @include button-style;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 250px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+
+    &__shop {
+        @include button-style;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__right {
         width: 40vw;
         img{
-            width: 100%;
+            width: 1000px;
         }
     }
 }
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+    &__top{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__question{
+        font-size: $font-size-title;
+        font-weight: $font-weight-bold;
+        color: $primary-color;
+    }
+
+    &__description{
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+    }
+
+    &__btn {
+        @include button-style;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 250px;
+        background-color: white;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+
+    &__catalog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 50px;
+        
+        img {
+            width: 250px;
+            border-radius: 10px;
+        }
+    }
+    &__description_dog{
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+    }
+    &__text{
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+    }
+
+    &__price{
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+    }
+}
+
+.section3{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: $secondary-color;
+
+    img {
+        width: 30vw;
+        border-radius: 10px;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        width: 30vw;
+    }
+    
+    &__title{
+        font-size: $font-size-title;
+        font-weight: $font-weight-bold;
+        color: $primary-color;
+        text-align: end;
+    }
+    &__subtitle {
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+        text-align: end;
+    }
+
+    &__text {
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+        text-align: end;
+    }
+
+    &__btn {
+        display: flex;
+        height: 60px;
+        gap: 30px;
+        text-align: end;
+        justify-content: flex-end;
+    }
+
+    &__view {
+        @include button-style;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 250px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+
+    &__shop {
+        @include button-style;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+    &__top{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__question{
+        font-size: $font-size-title;
+        font-weight: $font-weight-bold;
+        color: $primary-color;
+    }
+
+    &__description{
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color: $primary-color;
+    }
+
+    &__btn {
+        @include button-style;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 250px;
+        background-color: white;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    &__blog{
+        width: 20vw;
+        img {
+            width: 20vw;
+            height: 250px;
+            border-radius: 10px;
+        }
+    }
+    &__text{
+        h2 {
+            font-size: $font-size-small;
+            
+            height: 20px;
+            width: 100px;
+            background-color: rgb(0, 179, 255);
+            color: white;
+            border-radius:2px;
+        }
+        p {
+            font-size: $font-size-base;
+            line-height: $line-height-base;
+            color: $primary-color;
+        }
+        h1{
+            font-size: $font-size-title;
+            font-weight: $font-weight-bold;
+            color: $primary-color;
+        }
+    }
+
+    
+}
+
+
+
+    
+
+

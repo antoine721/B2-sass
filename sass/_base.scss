@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'mixins';
+@import 'components/header';
+@import 'components/footer';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    font-family: "SVN-GilroyLight", sans-serif;
+    color: $primary-color;
+    background-color: white; 
+    line-height: $line-height-base; 
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $font-weight-bold; 
+    color: $primary-color;
+}
+
+p {
+    font-size: $font-size-base; 
+    line-height: $line-height-base;
+    color: $primary-color;
+}
+
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary-color; 
+    }
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
